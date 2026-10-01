@@ -1,0 +1,536 @@
+/* ============================================
+   CONFIGURACIÓN GENERAL
+============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f7fc;
+    color: #292735;
+    line-height: 1.7;
+}
+
+
+/* ============================================
+   HEADER
+============================================ */
+
+header {
+    background: linear-gradient(
+        135deg,
+        #6245ad,
+        #8061ce,
+        #a66dd4
+    );
+
+    color: white;
+    text-align: center;
+
+    padding: 80px 20px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border-radius: 50%;
+
+    top: -120px;
+    left: -100px;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    border-radius: 50%;
+
+    bottom: -120px;
+    right: -80px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+
+    position: relative;
+    z-index: 1;
+}
+
+header p {
+    max-width: 750px;
+    margin: auto;
+
+    font-size: 1.15rem;
+
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ============================================
+   NAVEGACIÓN
+============================================ */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    padding: 16px;
+
+    text-align: center;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+nav a {
+    display: inline-block;
+
+    color: #6245ad;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    margin: 5px 12px;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+nav a:hover {
+    color: #a66dd4;
+    transform: translateY(-2px);
+}
+
+
+/* ============================================
+   CONTENEDOR PRINCIPAL
+============================================ */
+
+main {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 50px 20px;
+}
+
+
+/* ============================================
+   SECCIONES
+============================================ */
+
+section {
+    background: white;
+
+    padding: 40px;
+
+    margin-bottom: 30px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.06);
+
+    scroll-margin-top: 90px;
+}
+
+section h2 {
+    color: #6245ad;
+
+    font-size: 2rem;
+
+    margin-bottom: 18px;
+}
+
+section h3 {
+    color: #7357c8;
+
+    margin-bottom: 10px;
+}
+
+.intro {
+    font-size: 1.08rem;
+}
+
+
+/* ============================================
+   TARJETAS
+============================================ */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+
+    gap: 22px;
+
+    margin-top: 25px;
+}
+
+.card {
+    background: linear-gradient(
+        145deg,
+        #f5f1ff,
+        #eee9ff
+    );
+
+    padding: 25px;
+
+    border-radius: 16px;
+
+    border-left: 5px solid #8061ce;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 12px 25px rgba(98, 69, 173, 0.15);
+}
+
+.card h3 {
+    color: #6245ad;
+
+    font-size: 1.3rem;
+}
+
+
+/* ============================================
+   LISTAS
+============================================ */
+
+ul {
+    padding-left: 25px;
+
+    margin-top: 15px;
+}
+
+li {
+    margin-bottom: 9px;
+}
+
+
+/* ============================================
+   CAJAS DE INFORMACIÓN
+============================================ */
+
+.warning {
+    background: #fff5e6;
+
+    border-left: 6px solid #f0a742;
+
+    padding: 20px;
+
+    margin-top: 25px;
+
+    border-radius: 10px;
+}
+
+.help {
+    background: #f0edff;
+
+    border-left: 6px solid #6245ad;
+}
+
+.myth {
+    background: #faf0f9;
+
+    padding: 22px;
+
+    border-radius: 12px;
+
+    margin-top: 15px;
+
+    border: 1px solid #f0dff0;
+}
+
+.myth h3 {
+    color: #76549c;
+}
+
+
+/* ============================================
+   BOTONES
+============================================ */
+
+button {
+    font-family: inherit;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+
+/* ============================================
+   BOTÓN VOLVER ARRIBA
+============================================ */
+
+#btnArriba {
+    position: fixed;
+
+    bottom: 25px;
+    right: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #6245ad;
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.2);
+
+    z-index: 1000;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+#btnArriba:hover {
+    transform: translateY(-4px);
+
+    background: #7357c8;
+}
+
+
+/* ============================================
+   ANIMACIONES DE SCROLL
+============================================ */
+
+.animacion-seccion {
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.animacion-seccion.visible {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* ============================================
+   FOOTER
+============================================ */
+
+footer {
+    background: #292735;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    margin-top: 20px;
+}
+
+footer p {
+    max-width: 800px;
+
+    margin: auto;
+
+    color: #d7d4df;
+
+    font-size: 0.95rem;
+}
+
+
+/* ============================================
+   SELECCIÓN DE TEXTO
+============================================ */
+
+::selection {
+    background: #8061ce;
+
+    color: white;
+}
+
+
+/* ============================================
+   SCROLLBAR
+============================================ */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1eff6;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8061ce;
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6245ad;
+}
+
+
+/* ============================================
+   RESPONSIVE - TABLETS
+============================================ */
+
+@media (max-width: 850px) {
+
+    header {
+        padding: 65px 20px;
+    }
+
+    header h1 {
+        font-size: 2.4rem;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+}
+
+
+/* ============================================
+   RESPONSIVE - MÓVILES
+============================================ */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 55px 18px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav {
+        padding: 12px 8px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+
+        margin: 4px 7px;
+    }
+
+    main {
+        padding: 30px 14px;
+    }
+
+    section {
+        padding: 25px 20px;
+
+        border-radius: 15px;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+}
+
+
+/* ============================================
+   REDUCIR ANIMACIONES SI EL USUARIO LO PREFIERE
+============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+
+        transition: none !important;
+
+        animation: none !important;
+    }
+
+}
+
+Y cambia tu index.html
+
+Como ahora tendrás un archivo CSS separado, elimina el bloque <style>...</style> que tienes dentro del HTML y coloca esto dentro de <head>:
+
+<link rel="stylesheet" href="style.css">
+
+
+Tu estructura de archivos quedaría:
+
+📁 proyecto
+│
+├── 📄 index.html
+├── 🎨 style.css
+└── ⚙️ script.js
+
+
+Y al final de index.html, justo antes de </body>:
+
+<script src="script.js"></script>
+
+
+Con eso tendrás HTML para el contenido + CSS para el diseño + JavaScript para la interacción, separados correctamente.
