@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Trastornos de la Conducta Alimentaria</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8f7fc;
+      color: #292735;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #7357c8, #a66dd4);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      max-width: 750px;
+      margin: auto;
+      font-size: 1.15rem;
+    }
+
+    nav {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #6245ad;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #a66dd4;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      background: white;
+      padding: 35px;
+      margin-bottom: 30px;
+      border-radius: 18px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    }
+
+    section h2 {
+      color: #6245ad;
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+
+    section h3 {
+      color: #7357c8;
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      font-size: 1.08rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .card {
+      background: #f4f0ff;
+      padding: 25px;
+      border-radius: 15px;
+      border-left: 5px solid #8061ce;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 25px;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .warning {
+      background: #fff4e5;
+      border-left: 6px solid #f0a742;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .help {
+      background: #eeeaff;
+      border-left: 6px solid #6245ad;
+    }
+
+    .myth {
+      background: #f9eef8;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 15px;
+    }
+
+    footer {
+      background: #292735;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 30px;
+    }
+
+    footer p {
+      max-width: 800px;
+      margin: auto;
+      color: #ddd;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 2.1rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+
+      section {
+        padding: 25px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Trastornos de la Conducta Alimentaria</h1>
+    <p>
+      Información educativa para comprender qué son, cuáles son algunas
+      de sus manifestaciones y por qué es importante buscar ayuda profesional.
+    </p>
+  </header>
+
+  <nav>
+    <a href="#que-son">¿Qué son?</a>
+    <a href="#tipos">Tipos</a>
+    <a href="#senales">Señales</a>
+    <a href="#ayuda">Ayuda</a>
+  </nav>
+
+  <main>
+
+    <section id="que-son">
+      <h2>¿Qué son?</h2>
+
+      <p class="intro">
+        Los trastornos de la conducta alimentaria (TCA) son problemas de salud
+        mental que pueden afectar la relación de una persona con la alimentación,
+        el cuerpo y el peso. Pueden aparecer en personas de diferentes edades,
+        géneros, cuerpos y contextos.
+      </p>
+
+      <p class="intro" style="margin-top: 15px;">
+        No son simplemente una cuestión de voluntad ni deben interpretarse como
+        una elección. Son condiciones que pueden tener consecuencias físicas y
+        psicológicas y que requieren atención adecuada.
+      </p>
+
+      <div class="warning">
+        <strong>Importante:</strong>
+        Esta página tiene fines educativos y no sustituye una evaluación,
+        diagnóstico o tratamiento realizado por profesionales de la salud.
+      </div>
+    </section>
+
+    <section id="tipos">
+      <h2>Algunos tipos de TCA</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Anorexia nerviosa</h3>
+          <p>
+            Puede implicar una restricción importante de la alimentación,
+            preocupación intensa por el peso o la figura corporal y una
+            percepción alterada del propio cuerpo.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Bulimia nerviosa</h3>
+          <p>
+            Puede incluir episodios recurrentes de atracones acompañados
+            de una sensación de pérdida de control y conductas destinadas
+            a compensarlos.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Trastorno por atracón</h3>
+          <p>
+            Se caracteriza por episodios recurrentes de atracones en los
+            que existe sensación de pérdida de control, acompañados de
+            malestar significativo.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>ARFID</h3>
+          <p>
+            El trastorno evitativo/restrictivo de la ingesta de alimentos
+            puede implicar evitar o restringir alimentos debido a factores
+            como características sensoriales, falta de interés o temor a
+            determinadas consecuencias de comer.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="senales">
+      <h2>Posibles señales de alerta</h2>
+
+      <p>
+        Las señales pueden variar considerablemente entre personas. Algunas
+        situaciones que podrían justificar una conversación con un profesional
+        incluyen:
+      </p>
+
+      <ul>
+        <li>Preocupación intensa y persistente por la alimentación o el cuerpo.</li>
+        <li>Cambios importantes en los hábitos alimentarios.</li>
+        <li>Evitar grupos completos de alimentos sin una razón médica indicada.</li>
+        <li>Sentimientos frecuentes de culpa o ansiedad relacionados con comer.</li>
+        <li>Aislamiento durante las comidas.</li>
+        <li>Cambios significativos en el comportamiento relacionados con la alimentación.</li>
+        <li>Malestar emocional relacionado con la imagen corporal.</li>
+      </ul>
+
+      <div class="warning">
+        <strong>Recuerda:</strong>
+        una sola señal no significa necesariamente que una persona tenga un
+        trastorno alimentario. El diagnóstico debe realizarlo un profesional
+        cualificado.
+      </div>
+    </section>
+
+    <section>
+      <h2>Mitos y realidades</h2>
+
+      <div class="myth">
+        <h3>❌ "Solo afectan a personas muy delgadas."</h3>
+        <p>
+          Los TCA pueden afectar a personas con diferentes tipos y tamaños
+          corporales.
+        </p>
+      </div>
+
+      <div class="myth">
+        <h3>❌ "Es simplemente falta de voluntad."</h3>
+        <p>
+          Los TCA son problemas de salud complejos y no deben reducirse a
+          una cuestión de voluntad.
+        </p>
+      </div>
+
+      <div class="myth">
+        <h3>❌ "Si alguien come normalmente, no puede tener un TCA."</h3>
+        <p>
+          Los trastornos alimentarios pueden presentarse de formas diferentes
+          y no siempre son evidentes desde el exterior.
+        </p>
+      </div>
+    </section>
+
+    <section id="ayuda" class="help">
+      <h2>¿Cuándo buscar ayuda?</h2>
+
+      <p>
+        Si tú o alguien cercano está experimentando dificultades importantes
+        relacionadas con la alimentación, la imagen corporal o el comportamiento
+        alimentario, es recomendable hablar con un profesional de la salud.
+      </p>
+
+      <p style="margin-top: 15px;">
+        Un médico, psicólogo, psiquiatra o profesional especializado en TCA
+        puede realizar una evaluación y orientar sobre las opciones de atención.
+      </p>
+
+      <div class="warning">
+        <strong>Si existe una emergencia médica o riesgo inmediato para la vida,
+        busca servicios de emergencia de tu localidad.</strong>
+      </div>
+    </section>
+
+    <section>
+      <h2>Promovamos una relación saludable con la alimentación</h2>
+
+      <p>
+        Hablar sobre alimentación y cuerpo con respeto puede ayudar a reducir
+        el estigma. Es importante evitar comentarios sobre el peso o la apariencia
+        de otras personas y recordar que la salud de alguien no puede determinarse
+        simplemente observando su cuerpo.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      Página educativa sobre trastornos de la conducta alimentaria.
+      La información presentada no sustituye la orientación de profesionales
+      de la salud.
+    </p>
+  </footer>
+
+</body>
+</html>
